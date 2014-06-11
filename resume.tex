@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        
+
+% moderncv themes
+\moderncvstyle{casual}                            
+\moderncvcolor{black}                            
+%\nopagenumbers{}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2.2cm} 
+
+% personal data
+\name{Tim A.}{Pobst}
+\address{7620 Alki Lane}{Knoxville TN 37919}{}
+\phone[mobile]{(865)~484~6883}
+\email{tim.pobst@gmail.com}
+\social[linkedin][https://www.linkedin.com/pub/tim-pobst/87/60/8a]{tim-pobst}
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{article}{{Peer Reviewed Articles}}
+%---------------------------------------------------------------------------
+%            content
+%---------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+% Education
+\input{Education}
+
+\section{Engineering Experience}
+
+\cventry{2011-2014}{Graduate Student Researcher}{University of Tennessee}{Knoxville, TN}{}{
+  \emph{Water Quality Laboratory supervised by Dr. John S. Schwartz}
+	\begin{itemize}
+		%\item Collected river/stream water samples and measured flow using USGS standard protocols. %Used SonTek RiverSurveyor equipment for flow measurement.
+ 		%\item Conducted water quality analysis in streams utilizing field instruments and laboratory equipment.% (ICP, autotitrator, wet chemistry techniques).%; analysis included pH, conductivity, TSS, anions/cations, and dissolved metals. (data sondes) 
+		\item Managed a database of stream quality measurements for 43 sites in the Great Smokey Mountains National park (GRSM).
+		\item Managed field operations for the GRSM, Noland Divide monitoring station: a remote study site for atmospheric pollutant deposition, soil biogeochemistry, and watershed transport.
+	\end{itemize}}
+
+\cventry{2010-2011}{Water Resources Group Leader}{University of Tennessee}{Knoxville, TN}{}{
+  \emph{Senior Design Class for the Civil and Environmental Engineering Department}
+ 	 \begin{itemize}
+	    \item Planned and designed storm water drainage system for TDOT project in Farragut, Tennessee
+	    \item Estimated flow capacity for creek and US70/11 bridge crossing and culverts.
+ 	 \end{itemize}}
+
+%\cventry{2009-2011}{Undergraduate Research Assistant}{University of Tennessee}{Knoxville, TN}{}{
+  %\emph{Lab and Field work for Dr. John S. Schwartz's graduate students}
+%\begin{itemize}
+	%\item Responsibilities incuded: Equipment and lab ware washing, sub-sampling; and water quality sample collection responsibilities for GRSM and OSM.
+%\end{itemize}}%, mud drying and weighing
+
+\section{Extracurricular Experience}
+
+\cventry{2012-}{Coach}{University of Tennessee}{Knoxville, TN}{Women's Ultimate Frisbee }{\emph{Run the practices and coach the tournaments}
+	\begin{itemize}
+		\item Teach strategies and techniques to all levels of experience, while analyzing strengths and weaknesses for a competitive team. 
+		\item Collaborate with other players/coaches of different views and experiences to strengthen the team.
+		\item Remain calm and practice patience constantly.
+	\end{itemize}
+}
+
+\cventry{2006-2007}{Resident Assistant}{University of Tennessee}{Knoxville, TN}{}{\emph{Assisted 38 male freshmen}
+	\begin{itemize}
+		\item Fostered a community supportive to academic achievement, responsible decision making.
+		\item Promoted community through planned and spontaneous social and educational programs.
+		\item Mediated conflicts and educated residents about their responsibilities.
+	\end{itemize}}
+
+% Skills and Interests
+\input{SkillIntrest}
+
+\section{Honors \& Awards}
+\cventry{}{Boy Scouts of America}{Troop 135}{Franklin, TN}{}{Eagle Scout}
+
+% References
+%\section{References}
+%\cvitem{}{Available upon request}
+
+\end{document}

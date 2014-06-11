@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper,sans]{moderncv} 
+
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{black} 
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2.2cm} 
+
+% personal data
+\name{Matthew J.}{Urffer}
+\address{2474 Urffer Road}{Coopersburg PA 18036}{}
+\phone[mobile]{(610)~462~2761}
+\email{matthew.urffer@gmail.com} 
+\social[github]{murffer}
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{article,anstrans,conf}{{Peer Reviewed Articles},{ANS Transactions}, {Conference Presentations}}
+%---------------------------------------------------------------------------
+%            content
+%---------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+% Education
+\input{Education}
+
+% Thesis Projects
+\section{Doctoral Research}
+\cvitem{title}{\emph{Optimization of Scintillator based Radiation Portal Monitors}}
+\cvitem{supervisors}{\emph{Dr. Laurence F. Miller}, Dr. Dayakar Penumadu, Dr.  Lawrence Heilbronn, Dr. Ronald E. Pevey}
+\cvitem{description}{MCNPX and GEANT4 models are applied to the simulation of a replacement portal monitor to investigate the secondary reaction products energy deposition, scintillation photon generation and light transport, and neutronics}
+
+\section{Master Thesis}
+\cvitem{title}{\emph{Design of a Neutron Detector Capable of Replacing ${}^{3}$He Detectors Utilizing Thin Polymeric Films}}
+\cvitem{supervisors}{\emph{Dr. Laurence F. Miller}, Dr. Jason P. Hayward, Dr. Ronald E. Pevey}
+\cvitem{description}{A replacement portal monitor detector was designed using MCNPX with significant experimental validation. Achievement of the necessary neutron-gamma discrimination was investigated utilizing pulse height and pulse shape discrimination.}
+
+% Research Projects
+\section{Research Projects}
+\cventry{2010-2013}{Radiation Detector Characterization}{}{Knoxville, TN}{}{
+  \emph{Developed characterization techniques allowing for the measurement of thin films for portal monitor applications}
+\begin{itemize}
+	\item Advanced repeatable measurement techniques
+  \item Developed techniques for gamma discrimination based on pulse height discriminators
+	\item Characterized detector light yield,neutronic performance, and gamma discrimination utilizing an authored MATLAB code base
+\end{itemize}}
+\cventry{2012--2013}{Radiation Detector Simulation}{}{Knoxville, TN}{}{
+  \emph{Simulations of various detector assemblies with MCNPX, SCALE and GEANT4 providing insights for effective detector design}
+  \begin{itemize}
+    \item Designed and fabricated a ${}^{60}$Co irradiator in compliance with radiation safety regulations
+    \item Calculated intrinsic efficiencies based MCNPX calculations and measured spectra
+    \item Simulated various neutron irradiator for calculation benchmarking and preformed parameter studies and optimization of a replacement radiation portal monitor
+    \item Simulated light transport in various detector geometries and materials 
+  \end{itemize}}
+\cventry{2013}{Spent Fuel Cask NDA}{}{Knoxville, TN}{}{
+  Designed and evaluated gamma collimators for the in-situ NDA of spent fuel casks
+\begin{itemize}
+	\item Completed MCNPX simulations utilizing variance reduction of various collimator design with point and area sources
+	\item Validation of the collimator designs by generalized geometry holdup measurements
+\end{itemize}}
+\cventry{2012}{Pulse Shape Discrimination}{}{Knoxville, TN}{}{Preformed pulse shape discrimination using charge integration, modal methods, and artificial neural networks in the MATLAB environment }
+
+% Skills and Interests
+\input{SkillIntrest}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+% Publications from a BibTeX file using the multibib package
+\section{Publications}
+% Peer - Reviewd
+\nocitearticle{Miller2013IEEE,Mabe2013NIMA,Mabe2013,Sen2012,Kan2011}
+\bibliographystylearticle{plain}
+\bibliographyarticle{UrfferPub}
+% ANS Transactions
+\nociteanstrans{UrfferANS5,UrfferANS4,UrfferANS3,UrfferANS2,UrfferANS1}
+\bibliographystyleanstrans{plain}
+\bibliographyanstrans{UrfferANSTrans}
+% Presentations / Other
+\nociteconf{ARI2013,TurnerRPM,TurnerSecElec}
+\bibliographystyleconf{plain}
+\bibliographyconf{UrfferConf}
+
+\section{References}
+\cvdoubleitem{}{\textbf{Dr. Laurence F. Miller}}{\textbf{Relation}}{Major Professor }
+\cvdoubleitem{}{}{Contact Information:}{  Professor \\
+  Nuclear Engineering\\315 Pasqua Nuclear Engineering\\Knoxville, TN 37996\\
+  (865) 974-2525 \\
+  \href{mailto:lfmiller@utk.edu}{lfmiller@utk.edu}\\}
+\cvdoubleitem{}{\textbf{Dr. Dayakar Penumadu}}{\textbf{Relation}}{Research Advisor}
+\cvdoubleitem{}{}{Contact Information:}{ Fred N. Peebles Professor and Head \& JIAM Chair of Excellence \\
+  325 John D. Tickle Building \\
+  Knoxville, TN 37996\\
+  (865) 974-2503  \\
+  \href{mailto:dpenumad@utk.edu}{dpenumad@utk.edu}\\}
+\cvdoubleitem{}{\textbf{Dr. Graham Walford}}{\textbf{Relation}}{Research Associate}
+\cvdoubleitem{}{}{Contact Information:}{ Walford Technologies \\
+  (865) 850-4200 \\
+  \href{mailto:gwalford@utk.edu}{gwalford@utk.edu}\\}
+\clearpage
+\end{document}
+
